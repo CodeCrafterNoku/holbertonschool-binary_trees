@@ -2,7 +2,7 @@
 #define BINARY_TREES_H
 
 #include <stddef.h> /* For NULL */
-#include <stdlib.h> /* For malloc */
+#include <stdlib.h> /* For malloc, free */
 
 /**
  * struct binary_tree_s - Binary tree node
@@ -25,7 +25,8 @@ typedef struct binary_tree_s binary_tree_t;
 /* Function prototypes */
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
 binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value);
-binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value); /* New function prototype */
+binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value);
+void binary_tree_delete(binary_tree_t *tree); /* New function prototype */
 
 /* Provided by Holberton (for compilation context) */
 void binary_tree_print(const binary_tree_t *tree);
