@@ -6,7 +6,7 @@
  *
  * Return: A pointer to the sibling node.
  * If node is NULL or the parent is NULL, returns NULL.
- * If node has no sibling (e.g., parent has only one child), returns NULL.
+ * If node has no sibling, returns NULL.
  */
 binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 {
