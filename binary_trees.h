@@ -1,7 +1,7 @@
 #ifndef BINARY_TREES_H
 #define BINARY_TREES_H
 
-#include <stddef.h> /* For NULL */
+#include <stddef.h> /* For NULL, size_t */
 #include <stdlib.h> /* For malloc, free */
 #include <stdio.h>  /* For printing in main/example context */
 
@@ -32,7 +32,8 @@ int binary_tree_is_leaf(const binary_tree_t *node);
 int binary_tree_is_root(const binary_tree_t *node);
 void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int));
 void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int));
-void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int)); /* New function prototype */
+void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int));
+size_t binary_tree_height(const binary_tree_t *tree); /* New function prototype */
 
 /* Provided by Holberton (for compilation context) */
 void binary_tree_print(const binary_tree_t *tree);
